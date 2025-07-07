@@ -4,7 +4,7 @@ from tabulate import tabulate
 class Todo:
     def __init__(self):
 
-        self._tdo = {}
+        self._todo = {}
         
 
     def new_task(self,title,discription):
@@ -38,7 +38,7 @@ class Todo:
         
     
         if task_name in low_dic.keys():
-            new_disc=input(f"Enter discription for {task_name} :")
+            
             del(self._todo[task_name])
         else:
             print("invalid task name")
@@ -69,7 +69,9 @@ class Todo:
             "1. Enter for New Task  \n" \
             "2. Enter For Edit Anytask \n" \
             "3. Enter for delete any Task \n" \
-            "4. Enter for show all task \n" \
+            "4. Enter for show all task \n " \
+            "5.Emtyer " \
+            
             "==============================\n \n" )
             ch = int(input("Enter Your choice :").strip())
             
