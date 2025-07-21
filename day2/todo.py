@@ -73,7 +73,13 @@ class Todo:
             "5.Emtyer " \
             
             "==============================\n \n" )
-            ch = int(input("Enter Your choice :").strip())
+            try:
+                ch = int(input("Enter Your choice :").strip())
+            except ValueError:
+                print(" ============================\n" \
+                "!please enter integer!" \
+                "========================== ")
+                continue
             
             choice = [1,2,3,4]
             if ch in choice:
